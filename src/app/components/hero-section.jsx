@@ -293,12 +293,7 @@ export default function AnimatedMarketingSection() {
       icon: <CheckSquare className="text-xl" />,
       isHighlight: false,
     },
-    {
-      title: "EVALUATING",
-      description: "Analyzing the project's scope, challenges, and resources.",
-      icon: <CheckSquare className="text-xl" />,
-      isHighlight: false,
-    },
+  
     {
       title: "PLANNING",
       description: "Strategizing and outlining the steps for successful execution.",
@@ -311,12 +306,7 @@ export default function AnimatedMarketingSection() {
       icon: <Target className="text-xl" />,
       isHighlight: false,
     },
-    {
-      title: "EXECUTION",
-      description: "Implementing the plan and delivering results.",
-      icon: <Target className="text-xl" />,
-      isHighlight: false,
-    },
+ 
   ]
 
   // Intersection Observer for triggering animations
