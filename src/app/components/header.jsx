@@ -21,19 +21,19 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-8">
-        <Link href="/" className="text-blue-500 hover:text-white transition-colors duration-300 font-medium">
+        <Link href="/" className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
           HOME
         </Link>
-        <Link href="/about"  className="text-white hover:text-blue-500 transition-colors duration-300 font-medium">
+        <Link href="/about"  className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
           ABOUT US
         </Link>
-        <Link href="/services" className="text-white hover:text-blue-500 transition-colors duration-300 font-medium">
+        <Link href="/services" className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
           SERVICES
         </Link>
-        <Link href="/portfolio" className="text-white hover:text-blue-500 transition-colors duration-300 font-medium">
+        <Link href="/portfolio" className="text-white hover:ttext-[#44c5f8] transition-colors duration-300 font-medium">
            PORTFOLIO
         </Link>
-        <Link href="/contact" className="text-white hover:text-blue-500 transition-colors duration-300 font-medium">
+        <Link href="/contact" className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
           CONTACT
         </Link>
       </div>
@@ -56,28 +56,28 @@ const Header = () => {
         className={`absolute top-full left-0 w-full bg-black md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
           }`}
       >
-        {/* <div className="flex flex-col items-center py-4 space-y-4">
-          <Link href="/">
-            <a className="text-yellow-500 hover:text-white transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>HOME</a>
+        <div className="flex flex-col items-center py-4 space-y-4">
+          <Link href="/" className="text-yellow-500 hover:text-white transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>
+            HOME
           </Link>
           <Link href="/about" className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>
           ABOUT US
           </Link>
-          <Link href="/services">
-            <a className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>SERVICES</a>
+          <Link href="/services" className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>
+           SERVICES
           </Link>
-          <Link href="/portfolio">
-            <a className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>PORTFOLIO</a>
+          <Link href="/portfolio" className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>
+            PORTFOLIO
           </Link>
-          <Link href="/contact">
-            <a className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>CONTACT</a>
+          <Link href="/contact" className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>
+            CONTACT
           </Link>
-        </div> */}
+        </div>
       </div>
 
       {/* Yellow Circle with text - always visible */}
       
-  <button className=' text-white  gredient px-[40px] py-[5px] rounded-2xl'>Learn more</button>
+  <button className=' text-white  gredient px-[40px] py-[5px] rounded-2xl cursor-pointer'>Learn more</button>
      
 
      
