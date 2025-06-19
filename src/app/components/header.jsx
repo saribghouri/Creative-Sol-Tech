@@ -13,8 +13,8 @@ const Header = () => {
         <Link href="/"className="flex items-center space-x-2">
           
             {/* Replace with your actual logo image or SVG */}
-            <img src="/eYNcgv.png" alt="BellCow Ventures Logo" className="h-14 w-54" />
-            {/* <span className="text-yellow-500 font-bold text-xl">BellCow Ventures</span> */}
+            <img src="/eYNcgv.png" alt="Creative-sol-tech Ventures Logo" className="h-14 w-54" />
+            {/* <span className="text-yellow-500 font-bold text-xl">Creative-sol-tech Ventures</span> */}
          
         </Link>
       </div>
@@ -77,7 +77,7 @@ const Header = () => {
 
       {/* Yellow Circle with text - always visible */}
       
-  <button className=' text-white  gredient px-[40px] py-[5px] rounded-2xl cursor-pointer'>Learn more</button>
+  <button className=' text-white  gredient px-[40px] py-[5px] rounded-2xl cursor-pointer'>Contact Us</button>
      
 
      

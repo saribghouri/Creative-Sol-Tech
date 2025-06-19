@@ -55,7 +55,7 @@ export default function Designer() {
             {/* Right side - Content */}
             <div className="space-y-8">
               <div className="flex items-center space-x-2 animate-fade-in opacity-0 translate-y-4 transition-all duration-700">
-                <div className="h-2 w-2 rounded-full bg-yellow-400"></div>
+                <div className="h-2 w-2 rounded-full bg-[#2188b1]"></div>
                 <p className="uppercase tracking-wider text-sm">Vast Expertise</p>
               </div>
 
@@ -72,7 +72,7 @@ export default function Designer() {
               </div>
 
               <p className="text-gray-300 max-w-lg animate-fade-in opacity-0 translate-y-4 transition-all duration-700">
-                At Bellcow Ventures, we harness the power of latest tools to deliver exceptional results. Our commitment
+                At Creative-sol-tech Ventures, we harness the power of latest tools to deliver exceptional results. Our commitment
                 to innovation ensures we go above and beyond.
               </p>
 

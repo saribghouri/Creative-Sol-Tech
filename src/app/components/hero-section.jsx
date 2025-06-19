@@ -74,14 +74,14 @@
 //                 HIRE US
 //               </button>
 //               <button className="text-gray-500 font-medium text-lg tracking-wide pb-3 hover:text-white transition-colors uppercase">
-//                 WHAT IS BELLCOW?
+//                 WHAT IS Creative-sol-tech?
 //               </button>
 //             </div>
 
 //             {/* Description */}
 //             <div className="pt-4">
 //               <p className="text-gray-300 text-[25px] leading-relaxed">
-//                 Welcome to <span className="text-white font-semibold">Bellcow Ventures</span> - a marketing agency
+//                 Welcome to <span className="text-white font-semibold">Creative-sol-tech Ventures</span> - a marketing agency
 //                 specializing in creating captivating logos, professional corporate communications, dynamic social media
 //                 content, eye-catching flyers, and comprehensive solutions for all your branding, marketing, and digital
 //                 needs.
@@ -293,7 +293,7 @@ export default function AnimatedMarketingSection() {
       icon: <CheckSquare className="text-xl" />,
       isHighlight: false,
     },
-  
+
     {
       title: "PLANNING",
       description: "Strategizing and outlining the steps for successful execution.",
@@ -306,7 +306,7 @@ export default function AnimatedMarketingSection() {
       icon: <Target className="text-xl" />,
       isHighlight: false,
     },
- 
+
   ]
 
   // Intersection Observer for triggering animations
@@ -360,9 +360,8 @@ export default function AnimatedMarketingSection() {
             {/* Header Section */}
             <div className="space-y-6">
               <div
-                className={`flex items-center transition-all duration-1000 ${
-                  isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
-                }`}
+                className={`flex items-center transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
+                  }`}
                 style={{ transitionDelay: "0.2s" }}
               >
                 <div className="w-8 h-2 bg-[#209fd1]  rounded-full animate-pulse"></div>
@@ -374,9 +373,8 @@ export default function AnimatedMarketingSection() {
               <div className="flex items-start gap-8">
                 <div className="flex-1">
                   <h1
-                    className={`text-white text-5xl lg:text-6xl font-bold leading-tight tracking-tight transition-all duration-1000 ${
-                      isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                    }`}
+                    className={`text-white text-5xl lg:text-6xl font-bold leading-tight tracking-tight transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                      }`}
                     style={{ transitionDelay: "0.4s" }}
                   >
                     <span className="inline-block hover:text-[#44c5f8] transition-colors duration-300">MARKETING,</span>
@@ -389,61 +387,46 @@ export default function AnimatedMarketingSection() {
                   </h1>
                 </div>
                 {/* Animated Exclamation Mark */}
-                <div
-                  className={`flex flex-col relative items-center gap-2 mt-4 mr-[100px] transition-all duration-1000 ${
-                    isVisible ? "rotate-0 scale-100 opacity-100" : "rotate-45 scale-0 opacity-0"
-                  }`}
-                  style={{ transitionDelay: "0.6s" }}
-                >
-                  
-                  <div className="w-42 h-42  animate-bounce flex items-center justify-center">
-                                   <img className="w-42 h-42 -rotate-30" src="/QanWLr.png" alt="" />
 
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* Navigation Tabs */}
             <div
-              className={`flex gap-12 pt-8 transition-all duration-1000 ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
-              }`}
+              className={`flex gap-12 pt-8 transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
+                }`}
               style={{ transitionDelay: "0.8s" }}
             >
               <button
                 onClick={() => setActiveTab("hire")}
-                className={`font-medium text-lg tracking-wide pb-3 border-b-2 transition-all duration-300 uppercase transform hover:scale-105 ${
-                  activeTab === "hire"
+                className={`font-medium text-lg tracking-wide pb-3 border-b-2 transition-all duration-300 uppercase transform hover:scale-105 ${activeTab === "hire"
                     ? "text-white border-[#44c5f8]"
                     : "text-gray-500 border-transparent hover:text-white hover:border-gray-500"
-                }`}
+                  }`}
               >
                 HIRE US
               </button>
               <button
                 onClick={() => setActiveTab("about")}
-                className={`font-medium text-lg tracking-wide pb-3 border-b-2 transition-all duration-300 uppercase transform hover:scale-105 ${
-                  activeTab === "about"
+                className={`font-medium text-lg tracking-wide pb-3 border-b-2 transition-all duration-300 uppercase transform hover:scale-105 ${activeTab === "about"
                     ? "text-white border-[#44c5f8]"
                     : "text-gray-500 border-transparent hover:text-white hover:border-gray-500"
-                }`}
+                  }`}
               >
-                WHAT IS BELLCOW?
+                WHAT IS Creative-sol-tech?
               </button>
             </div>
 
             {/* Description */}
             <div
-              className={`pt-4 transition-all duration-1000 ${
-                isVisible ? "translate-x-0 opacity-100" : "-translate-x-5 opacity-0"
-              }`}
+              className={`pt-4 transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-5 opacity-0"
+                }`}
               style={{ transitionDelay: "1s" }}
             >
               <p className="text-gray-300 text-[25px] leading-relaxed">
                 Welcome to{" "}
                 <span className="text-white font-semibold hover:text-[#44c5f8] transition-colors duration-300 cursor-pointer">
-                  Bellcow Ventures
+                  Creative-sol-tech Ventures
                 </span>{" "}
                 - a marketing agency specializing in creating captivating logos, professional corporate communications,
                 dynamic social media content, eye-catching flyers, and comprehensive solutions for all your branding,
@@ -454,9 +437,8 @@ export default function AnimatedMarketingSection() {
             {/* Work Process Section */}
             <div className="space-y-6 pt-8">
               <div
-                className={`flex items-center gap-3 transition-all duration-1000 ${
-                  isVisible ? "translate-x-0 opacity-100" : "-translate-x-5 opacity-0"
-                }`}
+                className={`flex items-center gap-3 transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-5 opacity-0"
+                  }`}
                 style={{ transitionDelay: "1.2s" }}
               >
                 <div className="w-2 h-2 bg-[#44c5f8] rounded-full animate-pulse"></div>
@@ -464,9 +446,8 @@ export default function AnimatedMarketingSection() {
               </div>
 
               <div
-                className={`transition-all duration-1000 ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
-                }`}
+                className={`transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
+                  }`}
                 style={{ transitionDelay: "1.4s" }}
               >
                 <h2 className="text-white text-2xl font-bold leading-tight">
@@ -477,30 +458,26 @@ export default function AnimatedMarketingSection() {
               </div>
 
               {/* Process Steps Grid */}
-              <div className="grid grid-cols-2 gap-4 pt-4">
+              <div className="grid grid-cols-2 gap-8 pt-4 mt-[40px]">
                 {processSteps.map((step, index) => (
                   <div
                     key={index}
-                    className={`${
-                      step.isHighlight ? "bg-gray-500" : "bg-gray-500"
-                    } p-4  transition-all duration-400 hover:scale-105 hover:shadow-lg cursor-pointer group ${
-                      isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                    }`}
+                    className={`${step.isHighlight ? "card-gredient" : "card-gredient"
+                      } p-4  transition-all duration-400 hover:scale-105 hover:shadow-lg cursor-pointer group ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                      }`}
                     style={{ transitionDelay: `${0.6 + index * 0.1}s` }}
                   >
-                    <div className="flex items-start gap-3">
+                    <div className="flex items-start gap-3 ">
                       <div
-                        className={`${
-                          step.isHighlight ? "text-[#44c5f8]" : "text-[#44c5f8]"
-                        } mt-1 transition-transform duration-300 group-hover:scale-110`}
+                        className={`${step.isHighlight ? "text-[#000000]" : "text-[#000000]"
+                          } mt-1 transition-transform duration-300 text-xl group-hover:scale-110`}
                       >
                         {step.icon}
                       </div>
                       <div>
                         <h3
-                          className={`${
-                            step.isHighlight ? "text-white" : "text-white"
-                          } text-lg font-bold mb-2 tracking-wide group-hover:text-white transition-colors duration-300`}
+                          className={`${step.isHighlight ? "text-white" : "text-white"
+                            } text-lg font-bold mb-2 tracking-wide group-hover:text-white transition-colors duration-300`}
                         >
                           {step.title}
                         </h3>
@@ -516,51 +493,61 @@ export default function AnimatedMarketingSection() {
           </div>
 
           {/* Right Content - 5 columns */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 ">
             {/* Stats Card */}
-            <div
-              className={`bg-black border border-[#44c5f8] rounded-lg p-6 transition-all duration-1000 hover:shadow-2xl hover:shadow-[#44c5f8]/20 ${
-                isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
-              }`}
-              style={{ transitionDelay: "1s" }}
-            >
-              <div className="space-y-8">
-                {stats.map((stat, index) => (
-                  <div key={index}>
-                    <div className="text-center group cursor-pointer">
-                      <h3 className="text-[#44c5f8] text-3xl font-bold mb-1 transition-all duration-300 group-hover:scale-110">
-                        {counters[stat.key]}
-                        {stat.suffix}
-                      </h3>
-                      <p className="text-white text-xs font-medium tracking-widest group-hover:text-[#44c5f8] transition-colors duration-300">
-                        {stat.label}
-                      </p>
+            <div className=" flex  w-[100%] justify-between ">
+              <div
+                className={`flex flex-col relative items-center gap-2 mt-16 mr-[100px] transition-all duration-1000 ${isVisible ? "rotate-0 scale-100 opacity-100" : "rotate-45 scale-0 opacity-0"
+                  }`}
+                style={{ transitionDelay: "0.6s" }}
+              >
+
+                <div className="w-42 h-42  animate-bounce flex items-center justify-start">
+                  <img className="w-42 h-42 -rotate-30" src="/QanWLr.png" alt="" />
+
+                </div>
+              </div>
+              <div
+                className={`bg-black border w-[60%] border-[#44c5f8] rounded-lg p-6 flex justify-center transition-all duration-1000 hover:shadow-2xl hover:shadow-[#44c5f8]/20 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+                  }`}
+                style={{ transitionDelay: "1s" }}
+              >
+                <div className="space-y-8">
+                  {stats.map((stat, index) => (
+                    <div key={index}>
+                      <div className="text-center group cursor-pointer">
+                        <h3 className="text-[#44c5f8] text-3xl font-bold mb-1 transition-all duration-300 group-hover:scale-110">
+                          {counters[stat.key]}
+                          {stat.suffix}
+                        </h3>
+                        <p className="text-white text-xs font-medium tracking-widest group-hover:text-[#44c5f8] transition-colors duration-300">
+                          {stat.label}
+                        </p>
+                      </div>
+                      {index < stats.length - 1 && (
+                        <div className="border-b border-gray-700 mt-6 transition-all duration-300 hover:border-[#44c5f8]"></div>
+                      )}
                     </div>
-                    {index < stats.length - 1 && (
-                      <div className="border-b border-gray-700 mt-6 transition-all duration-300 hover:border-[#44c5f8]"></div>
-                    )}
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* Marketing Journey Image */}
             <div
-              className={`relative overflow-hidden rounded-lg transition-all duration-1000 hover:scale-105 ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-              }`}
+              className={`relative overflow-hidden rounded-lg transition-all duration-1000 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                }`}
               style={{ transitionDelay: "1.2s" }}
             >
-          
+
             </div>
-              <div  className={` overflow-hidden rounded-lg  relative mt-[20px] transition-all duration-1000 hover:scale-105 ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            <div className={` overflow-hidden rounded-lg  relative mt-[100px] transition-all duration-1000 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
               }`}
               style={{ transitionDelay: "1.2s" }}>
               <img
                 src="/rIvVEM.jpg"
                 alt="Let's start your marketing journey together"
-                className="w-full h-auto rounded-lg"
+                className="w-full max-h-screen rounded-lg"
               />
             </div>
           </div>
