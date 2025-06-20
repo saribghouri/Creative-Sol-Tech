@@ -12,15 +12,15 @@ const Header = () => {
     router.push("/contactsection")
   }
   return (
-    <nav className="bg-black py-4 px-6 md:px-12 flex w-full mt-[-140px]  z-10 fixed items-center justify-between ">
+    <nav className="bg-black py-4 px-6 md:px-12 flex w-full mt-[-140px]  border border-b-cyan-500 z-10 fixed items-center justify-between ">
       {/* Logo */}
       <div className="flex items-center">
-        <Link href="/"className="flex items-center space-x-2">
-          
-            {/* Replace with your actual logo image or SVG */}
-            <img src="/eYNcgv.png" alt="Creative-sol-tech Ventures Logo" className="h-14 w-54" />
-            {/* <span className="text-yellow-500 font-bold text-xl">Creative-sol-tech Ventures</span> */}
-         
+        <Link href="/" className="flex items-center space-x-2">
+
+          {/* Replace with your actual logo image or SVG */}
+          <img src="/eYNcgv.png" alt="Creative-sol-tech Ventures Logo" className="h-14 w-54" />
+          {/* <span className="text-yellow-500 font-bold text-xl">Creative-sol-tech Ventures</span> */}
+
         </Link>
       </div>
 
@@ -29,14 +29,14 @@ const Header = () => {
         <Link href="/" className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
           HOME
         </Link>
-        <Link href="/about"  className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
+        <Link href="/about" className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
           ABOUT US
         </Link>
         <Link href="/services" className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
           SERVICES
         </Link>
         <Link href="/portfolio" className="text-white hover:ttext-[#44c5f8] transition-colors duration-300 font-medium">
-           PORTFOLIO
+          PORTFOLIO
         </Link>
         <Link href="/contact" className="text-white hover:text-[#44c5f8] transition-colors duration-300 font-medium">
           CONTACT
@@ -66,10 +66,10 @@ const Header = () => {
             HOME
           </Link>
           <Link href="/about" className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>
-          ABOUT US
+            ABOUT US
           </Link>
           <Link href="/services" className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>
-           SERVICES
+            SERVICES
           </Link>
           <Link href="/portfolio" className="text-white hover:text-yellow-500 transition-colors duration-300 font-medium" onClick={() => setIsOpen(false)}>
             PORTFOLIO
@@ -81,12 +81,16 @@ const Header = () => {
       </div>
 
       {/* Yellow Circle with text - always visible */}
-      
-  <button className=' text-white  gredient px-[40px] py-[5px] rounded-2xl cursor-pointer'       onClick={handleContactClick}
->Contact Us</button>
-     
 
-     
+     <button
+  className='text-white gredient px-[40px] py-[5px] rounded-2xl cursor-pointer hidden md:block'
+  onClick={handleContactClick}
+>
+  Contact Us
+</button>
+
+
+
     </nav>
   );
 };

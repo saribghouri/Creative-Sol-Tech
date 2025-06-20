@@ -109,16 +109,16 @@ export default function ContactUs() {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="flex items-start gap-4"
               >
-                <div className="mt-1">
-                  <MapPin className="w-5 h-5 text-[#2188b1]" />
-                </div>
-                <div className="text-gray-300 leading-relaxed">
-                  Plot no C-18-F, Mezzanine Floor
+             <div className="flex items-start space-x-3">
+                <MapPin className="w-6 h-6 text-[#2188b1] mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-lg">
+                  Plot no C-18-F, burj-ul-minal Floor 304
                   <br />
-                  Sunset Lane 4, DHA Phase II,
+                  munawar chowrangi no.4, johor,
                   <br />
                   Karachi-75500, Pakistan.
-                </div>
+                </p>
+              </div>
               </motion.div>
 
               <motion.div
@@ -130,8 +130,8 @@ export default function ContactUs() {
                   <Mail className="w-5 h-5 text-[#2188b1]" />
                 </div>
                 <div className="text-gray-300 space-y-1">
-                  <div>sales@bellcowventures.com</div>
-                  <div>bellcowventures@gmail.com</div>
+   
+                  <div>Creative-sol-tech@gmail.com</div>
                 </div>
               </motion.div>
 
