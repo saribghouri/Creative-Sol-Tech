@@ -120,7 +120,7 @@ export default function ClientLogosSection() {
 
   return (
     <section
-      className="relative w-full h-84 bg-transparent overflow-hidden"
+      className="relative  w-full h-84 bg-transparent overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -135,7 +135,7 @@ export default function ClientLogosSection() {
       />
 
       {/* Infinite Scrolling Container */}
-      <div className="relative z-10 h-full -rotate-5 overflow-hidden">
+      <div className="relative  h-full -rotate-5 overflow-hidden">
         <div
           ref={scrollRef}
           className="flex items-center h-full"
@@ -151,7 +151,7 @@ export default function ClientLogosSection() {
       {/* Speed Control Buttons */}
       <button
         onClick={decreaseSpeed}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors group"
+        className="absolute left-4 top-1/ hidden transform -translate-y-1/2  bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors group"
         title="Decrease Speed"
       >
         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -164,13 +164,13 @@ export default function ClientLogosSection() {
 
       <button
         onClick={increaseSpeed}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors group"
+        className="absolute right-4 hidden top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors group"
         title="Increase Speed"
       >
         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
-        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+        <div className="absolute -bottom-8  left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
           Faster
         </div>
       </button>
@@ -182,7 +182,7 @@ export default function ClientLogosSection() {
 
       {/* Pause Indicator */}
       {isPaused && (
-        <div className="absolute top-4 right-4 z-20 bg-red-500/80 text-white text-xs px-3 py-1 rounded-full flex items-center space-x-1">
+        <div className="absolute top-4 hidden right-4 z-20 bg-red-500/80 text-white text-xs px-3 py-1 rounded-full flex items-center space-x-1">
           <div className="w-2 h-2 bg-white rounded-full"></div>
           <span>Paused</span>
         </div>
