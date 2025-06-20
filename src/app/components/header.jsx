@@ -1,11 +1,16 @@
 "use client"
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter()
 
+  const handleContactClick = () => {
+    router.push("/contactsection")
+  }
   return (
     <nav className="bg-black py-4 px-6 md:px-12 flex w-full mt-[-140px]  z-10 fixed items-center justify-between ">
       {/* Logo */}
@@ -77,7 +82,8 @@ const Header = () => {
 
       {/* Yellow Circle with text - always visible */}
       
-  <button className=' text-white  gredient px-[40px] py-[5px] rounded-2xl cursor-pointer'>Contact Us</button>
+  <button className=' text-white  gredient px-[40px] py-[5px] rounded-2xl cursor-pointer'       onClick={handleContactClick}
+>Contact Us</button>
      
 
      
