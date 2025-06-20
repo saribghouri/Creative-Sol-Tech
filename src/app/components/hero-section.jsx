@@ -267,6 +267,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import { User, CheckSquare, Calendar, Target } from "lucide-react"
+import ModernTablet from "./modren-tablet"
 
 export default function AnimatedMarketingSection() {
   const [activeTab, setActiveTab] = useState("hire")
@@ -541,7 +542,7 @@ export default function AnimatedMarketingSection() {
             >
 
             </div>
-            <div className={` overflow-hidden rounded-lg  relative mt-[100px] transition-all duration-1000 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            {/* <div className={` overflow-hidden rounded-lg  relative mt-[100px] transition-all duration-1000 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
               }`}
               style={{ transitionDelay: "1.2s" }}>
               <img
@@ -549,7 +550,8 @@ export default function AnimatedMarketingSection() {
                 alt="Let's start your marketing journey together"
                 className="w-full max-h-screen rounded-lg"
               />
-            </div>
+            </div> */}
+            <ModernTablet/>
           </div>
         </div>
       </div>
