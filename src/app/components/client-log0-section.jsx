@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useRef } from "react"
+import Image from "next/image"
 
 export default function ClientLogosSection() {
   const [isPaused, setIsPaused] = useState(false)
@@ -9,16 +10,21 @@ export default function ClientLogosSection() {
 
   // All logos in one continuous array
   const allLogos = [
-    { type: "andaaz", content: "andaaz" },
-    { type: "arabic", content: "التمويل" },
-    { type: "trust", content: "Trust", subtitle: "Guest Sanitary Napkins" },
-    { type: "century", content: "Century Insurance", subtitle: "A Jubilee General Insurance Co. Ltd." },
-    { type: "udl", content: "UDL", subtitle: "First UDL Modaraba" },
-    { type: "abbott", content: "Abbott", subtitle: "A Promise for Life" },
-    { type: "company1", content: "TechCorp" },
-    { type: "company2", content: "InnovateX" },
-
-
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
+    { type: "australia-ventures", content: "360 Australia Ventures" },
   ]
 
   // Duplicate logos for seamless loop
@@ -28,6 +34,21 @@ export default function ClientLogosSection() {
     const baseClasses = "flex-shrink-0 mx-8 transition-transform hover:scale-105"
 
     switch (logo.type) {
+      case "australia-ventures":
+        return (
+          <div key={index} className={baseClasses}>
+            <div className="flex items-center justify-center  rounded-lg p-4 ">
+              <Image
+                src="/MLEntp.png"
+                alt="360 Australia Ventures Logo"
+                width={120}
+                height={60}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        )
+
       case "andaaz":
         return (
           <div key={index} className={baseClasses}>
@@ -176,9 +197,7 @@ export default function ClientLogosSection() {
       </button>
 
       {/* Speed Indicator */}
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20 bg-black/50 text-white text-xs px-3 py-1 rounded-full">
-        
-      </div>
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20 bg-black/50 text-white text-xs px-3 py-1 rounded-full"></div>
 
       {/* Pause Indicator */}
       {isPaused && (

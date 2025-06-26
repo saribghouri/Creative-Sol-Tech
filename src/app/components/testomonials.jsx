@@ -137,7 +137,7 @@ export default function TestimonialSection() {
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -100 }}
                                 transition={{ duration: 0.6, ease: "easeInOut" }}
-                                className="grid md:grid-cols-2 gap-8 z-10 overflow-hidden"
+                                className="grid md:grid-cols-2 py-[20px] px-[20px] gap-8 z-10 overflow-hidden"
                             >
                                 {getCurrentTestimonials().map((testimonial, index) => (
                                     <motion.div
@@ -146,7 +146,7 @@ export default function TestimonialSection() {
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.6, delay: index * 0.2 }}
                                         whileHover={{ y: -10, scale: 1.02 }}
-                                        className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-yellow-400/30 transition-all duration-300"
+                                        className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-teal-400/30 transition-all duration-300"
                                     >
                                         {/* Profile Section */}
                                         <div className="flex flex-col items-center mb-6">
