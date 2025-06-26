@@ -68,8 +68,8 @@ export default function ServicesSection() {
         <div
           className={`transform transition-all duration-1000 ${isVisible ? "rotate-0 scale-100" : "rotate-45 scale-0"}`}
         >
-          <div className="w-16 h-4 bg-[#3ebaeb] rounded-full mb-2 transform rotate-12"></div>
-          <div className="w-12 h-4 bg-[#3ebaeb] rounded-full transform rotate-12"></div>
+          <div className="w-16 h-4 bg-[#10d4c4] rounded-full mb-2 transform rotate-12"></div>
+          <div className="w-12 h-4 bg-[#10d4c4] rounded-full transform rotate-12"></div>
         </div>
       </div>
 
@@ -79,8 +79,8 @@ export default function ServicesSection() {
           className={`text-start mb-16 max-w-[80%] transform transition-all duration-800 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
         >
           <div className="flex w-full items-center max-w-[80%] justify-start mb-4 text-start">
-            <div className="w-4 h-2 bg-[#37b1e0] rounded-full mr-3"></div>
-            <span className="text-[#2188b1] text-sm text-start font-medium tracking-wider uppercase">Core Services</span>
+            <div className="w-4 h-2 bg-[#10d4c4] rounded-full mr-3"></div>
+            <span className="text-[#10d4c4] text-sm text-start font-medium tracking-wider uppercase">Core Services</span>
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
             <span className="block">DISCOVER OUR</span>
@@ -101,15 +101,15 @@ export default function ServicesSection() {
               }}
             >
               {/* Golden Border Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               {/* Content */}
               <div className="relative z-10">
                 <div className="flex items-start space-x-6">
                   {/* Icon */}
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-purple-500/20 group-hover:scale-110 transition-all duration-300">
-                      <div className="text-white group-hover:text-[#2188b1] transition-colors duration-300">
+                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-cyan-500/20 group-hover:scale-110 transition-all duration-300">
+                      <div className="text-white group-hover:text-[#10d4c4] transition-colors duration-300">
                         {service.icon}
                       </div>
                     </div>
@@ -117,7 +117,7 @@ export default function ServicesSection() {
 
                   {/* Text Content */}
                   <div className="flex-1">
-                    <h3 className="text-[22px] font-bold mb-4 group-hover:text-[#2188b1] transition-colors duration-300">
+                    <h3 className="text-[22px] font-bold mb-4 group-hover:text-[#10d4c4] transition-colors duration-300">
                       {service.title}
                     </h3>
                     <p className="text-gray-300 text-[20px] leading-relaxed group-hover:text-white transition-colors duration-300">
@@ -128,7 +128,7 @@ export default function ServicesSection() {
               </div>
 
               {/* Hover Effect Border */}
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2188b1] group-hover:w-full transition-all duration-500"></div>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#10d4c4] group-hover:w-full transition-all duration-500"></div>
             </div>
           ))}
         </div>
@@ -137,7 +137,7 @@ export default function ServicesSection() {
         <div
           className={`mt-16 flex justify-center transform transition-all duration-1000 delay-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
         >
-          <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#2188b1] to-transparent"></div>
+          <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#10d4c4] to-transparent"></div>
         </div>
       </div>
     </section>

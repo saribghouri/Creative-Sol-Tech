@@ -26,7 +26,7 @@ export default function ProjectCTASection() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
                 <span className="text-white block">DO YOU HAVE ANY</span>
                 <motion.span
-                  className="text-[#2188b1] block"
+                  className="text-[#10d4c4] block"
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
@@ -120,7 +120,7 @@ export default function ProjectCTASection() {
 
                   {/* Pencil */}
                   <motion.div
-                    className="absolute -top-2 -right-2 w-1 h-16 bg-gradient-to-t from-cyan-600 to-[#2188b1] rounded-full transform rotate-45"
+                    className="absolute -top-2 -right-2 w-1 h-16 bg-gradient-to-t from-teal-500 to-[#10d4c4] rounded-full transform rotate-45"
                     whileHover={{ rotate: 50 }}
                     transition={{ duration: 0.3 }}
                   >
@@ -133,7 +133,7 @@ export default function ProjectCTASection() {
 
             {/* Floating elements */}
             <motion.div
-              className="absolute top-10 -left-10 w-2 h-2 bg-cyan-400 rounded-full"
+              className="absolute top-10 -left-10 w-2 h-2 bg-teal-500  rounded-full"
               animate={{
                 y: [0, -10, 0],
                 opacity: [0.5, 1, 0.5],

@@ -70,14 +70,14 @@ export default function PortfolioSection() {
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center mb-6">
-            <div className="w-2 h-2 bg-[#2188b1] rounded-full mr-3"></div>
+            <div className="w-2 h-2 bg-[#10d4c4] rounded-full mr-3"></div>
             <span className="text-lg font-medium tracking-wider text-gray-300">CORE PROJECTS</span>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+          <div className="flex flex-col w-full lg:flex-row lg:items-start lg:justify-between gap-8">
             {/* Title */}
             <div
-              className={`transform transition-all duration-1000 ${
+              className={`transform w-[50%] transition-all duration-1000 ${
                 isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
               }`}
             >
@@ -99,9 +99,9 @@ export default function PortfolioSection() {
                   <button
                     key={item}
                     onClick={() => setActiveFilter(item)}
-                    className={`text-sm font-medium tracking-wider transition-all duration-300 hover:text-[#2188b1] transform hover:scale-105 ${
+                    className={`text-lg font-medium tracking-wider transition-all duration-300 hover:text-[#10d4c4] transform hover:scale-105 ${
                       activeFilter === item
-                        ? "text-[#2188b1] border-b border-[#2188b1] pb-1"
+                        ? "text-[#10d4c4] border-b border-[#10d4c4] pb-1"
                         : "text-gray-300 hover:text-white"
                     }`}
                     style={{
@@ -148,14 +148,14 @@ export default function PortfolioSection() {
               {/* Special overlay for Annual Reports */}
               {item.hasOverlay && (
                 <div className="absolute bottom-6 left-6">
-                  <div className="bg-[#2188b1] text-black px-4 py-2 rounded font-medium text-sm transform transition-all duration-300 group-hover:scale-110">
+                  <div className="bg-[#10d4c4] text-black px-4 py-2 rounded font-medium text-sm transform transition-all duration-300 group-hover:scale-110">
                     Annual Reports
                   </div>
                 </div>
               )}
 
               {/* Hover border effect */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#2188b1] transition-colors duration-300 rounded-lg"></div>
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#10d4c4] transition-colors duration-300 rounded-lg"></div>
             </div>
           ))}
         </div>

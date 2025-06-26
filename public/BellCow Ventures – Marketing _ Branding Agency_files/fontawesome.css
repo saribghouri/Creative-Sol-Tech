@@ -727,23 +727,23 @@ readers do not read off random characters that represent icons */
   content: "\f7e5";
 }
 
-.fa-badge:before {
+.fa-h1:before {
   content: "\f335";
 }
 
-.fa-badge-check:before {
+.fa-h1-check:before {
   content: "\f336";
 }
 
-.fa-badge-dollar:before {
+.fa-h1-dollar:before {
   content: "\f645";
 }
 
-.fa-badge-percent:before {
+.fa-h1-percent:before {
   content: "\f646";
 }
 
-.fa-badger-honey:before {
+.fa-h1r-honey:before {
   content: "\f6b4";
 }
 
@@ -4083,7 +4083,7 @@ readers do not read off random characters that represent icons */
   content: "\f7ad";
 }
 
-.fa-id-badge:before {
+.fa-id-h1:before {
   content: "\f2c1";
 }
 

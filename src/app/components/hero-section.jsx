@@ -74,14 +74,14 @@
 //                 HIRE US
 //               </button>
 //               <button className="text-gray-500 font-medium text-lg tracking-wide pb-3 hover:text-white transition-colors uppercase">
-//                 WHAT IS Creative-sol-tech?
+//                 WHAT IS 360 Austrailia?
 //               </button>
 //             </div>
 
 //             {/* Description */}
 //             <div className="pt-4">
 //               <p className="text-gray-300 text-[25px] leading-relaxed">
-//                 Welcome to <span className="text-white font-semibold">Creative-sol-tech Ventures</span> - a marketing agency
+//                 Welcome to <span className="text-white font-semibold">360 Austrailia Ventures</span> - a marketing agency
 //                 specializing in creating captivating logos, professional corporate communications, dynamic social media
 //                 content, eye-catching flyers, and comprehensive solutions for all your branding, marketing, and digital
 //                 needs.
@@ -307,7 +307,6 @@ export default function AnimatedMarketingSection() {
       icon: <Target className="text-xl" />,
       isHighlight: false,
     },
-
   ]
 
   // Intersection Observer for triggering animations
@@ -353,7 +352,10 @@ export default function AnimatedMarketingSection() {
   }, [isVisible])
 
   return (
-    <div ref={sectionRef} className="bg-black text-white mt-[140px] w-full p-8 lg:p-12 overflow-hidden">
+    <div
+      ref={sectionRef}
+      className="bg-gradient-to-r from-[#000000] via-[#000000] to-[#000000] text-white mt-[140px] w-full p-8 lg:p-12 overflow-hidden"
+    >
       <div className="max-w-[90%] mx-auto">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
           {/* Left Content - 7 columns */}
@@ -361,12 +363,13 @@ export default function AnimatedMarketingSection() {
             {/* Header Section */}
             <div className="space-y-6">
               <div
-                className={`flex items-center transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
-                  }`}
+                className={`flex items-center transition-all duration-1000 ${
+                  isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
+                }`}
                 style={{ transitionDelay: "0.2s" }}
               >
-                <div className="w-8 h-2 bg-[#209fd1]  rounded-full animate-pulse"></div>
-                <h1 className="text-[#44c5f8] text-[22px] font-medium tracking-widest uppercase ml-3">
+                <div className="w-8 h-2 bg-[#10d4c4]  rounded-full animate-pulse"></div>
+                <h1 className="text-[#10d4c4] text-[22px] font-medium tracking-widest uppercase ml-3">
                   YOUR ONE-STOP SOLUTION FOR ALL YOUR
                 </h1>
               </div>
@@ -374,60 +377,64 @@ export default function AnimatedMarketingSection() {
               <div className="flex items-start gap-8">
                 <div className="flex-1">
                   <h1
-                    className={`text-white text-5xl lg:text-6xl font-bold leading-tight tracking-tight transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                      }`}
+                    className={`text-white text-5xl lg:text-6xl font-bold leading-tight tracking-tight transition-all duration-1000 ${
+                      isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                    }`}
                     style={{ transitionDelay: "0.4s" }}
                   >
-                    <span className="inline-block hover:text-[#44c5f8] transition-colors duration-300">MARKETING,</span>
+                    <span className="inline-block hover:text-[#10d4c4] transition-colors duration-300">MARKETING,</span>
                     <br />
-                    <span className="inline-block hover:text-[#44c5f8] transition-colors duration-300">BRANDING &</span>
+                    <span className="inline-block hover:text-[#10d4c4] transition-colors duration-300">BRANDING &</span>
                     <br />
-                    <span className="inline-block hover:text-[#44c5f8] transition-colors duration-300">
+                    <span className="inline-block hover:text-[#10d4c4] transition-colors duration-300">
                       DIGITAL NEEDS
                     </span>
                   </h1>
                 </div>
                 {/* Animated Exclamation Mark */}
-
               </div>
             </div>
 
             {/* Navigation Tabs */}
             <div
-              className={`flex gap-12 pt-8 transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
-                }`}
+              className={`flex gap-12 pt-8 transition-all duration-1000 ${
+                isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
+              }`}
               style={{ transitionDelay: "0.8s" }}
             >
               <button
                 onClick={() => setActiveTab("hire")}
-                className={`font-medium text-lg tracking-wide pb-3 border-b-2 transition-all duration-300 uppercase transform hover:scale-105 ${activeTab === "hire"
-                    ? "text-white border-[#44c5f8]"
+                className={`font-medium text-lg tracking-wide pb-3 border-b-2 transition-all duration-300 uppercase transform hover:scale-105 ${
+                  activeTab === "hire"
+                    ? "text-white border-[#10d4c4]"
                     : "text-gray-500 border-transparent hover:text-white hover:border-gray-500"
-                  }`}
+                }`}
               >
                 HIRE US
               </button>
               <button
                 onClick={() => setActiveTab("about")}
-                className={`font-medium text-lg tracking-wide pb-3 border-b-2 transition-all duration-300 uppercase transform hover:scale-105 ${activeTab === "about"
-                    ? "text-white border-[#44c5f8]"
+                className={`font-medium text-lg tracking-wide pb-3 border-b-2 transition-all duration-300 uppercase transform hover:scale-105 ${
+                  activeTab === "about"
+                    ? "text-white border-[#10d4c4]"
                     : "text-gray-500 border-transparent hover:text-white hover:border-gray-500"
-                  }`}
+                }`}
               >
-                WHAT IS Creative-sol-tech?
+                WHAT IS 360 Austrailia?
               </button>
             </div>
 
             {/* Description */}
             <div
-              className={`pt-4 transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-5 opacity-0"
-                }`}
+              className={`pt-4 transition-all duration-1000 ${
+                isVisible ? "translate-x-0 opacity-100" : "-translate-x-5 opacity-0"
+              }`}
               style={{ transitionDelay: "1s" }}
             >
               <p className="text-gray-300 text-[25px] leading-relaxed">
                 Welcome to{" "}
-                <span className="text-white font-semibold hover:text-[#44c5f8] transition-colors duration-300 cursor-pointer">
-                  Creative-sol-tech Ventures
+                <span className="text-white font-semibold hover:text-[#10d4c4] transition-colors duration-300 cursor-pointer">
+                  360 Austrailia Ventures
                 </span>{" "}
                 - a marketing agency specializing in creating captivating logos, professional corporate communications,
                 dynamic social media content, eye-catching flyers, and comprehensive solutions for all your branding,
@@ -438,17 +445,19 @@ export default function AnimatedMarketingSection() {
             {/* Work Process Section */}
             <div className="space-y-6 pt-8">
               <div
-                className={`flex items-center gap-3 transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-5 opacity-0"
-                  }`}
+                className={`flex items-center gap-3 transition-all duration-1000 ${
+                  isVisible ? "translate-x-0 opacity-100" : "-translate-x-5 opacity-0"
+                }`}
                 style={{ transitionDelay: "1.2s" }}
               >
-                <div className="w-2 h-2 bg-[#44c5f8] rounded-full animate-pulse"></div>
-                <h1 className="text-[#44c5f8] text-lg font-medium tracking-widest uppercase">4 STEPS</h1>
+                <div className="w-2 h-2 bg-[#10d4c4] rounded-full animate-pulse"></div>
+                <h1 className="text-[#10d4c4] text-lg font-medium tracking-widest uppercase">4 STEPS</h1>
               </div>
 
               <div
-                className={`transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
-                  }`}
+                className={`transition-all duration-1000 ${
+                  isVisible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
+                }`}
                 style={{ transitionDelay: "1.4s" }}
               >
                 <h2 className="text-white text-2xl font-bold leading-tight">
@@ -463,22 +472,26 @@ export default function AnimatedMarketingSection() {
                 {processSteps.map((step, index) => (
                   <div
                     key={index}
-                    className={`${step.isHighlight ? "card-gredient" : "card-gredient"
-                      } p-4  transition-all duration-400 hover:scale-105 hover:shadow-lg cursor-pointer group ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                      }`}
+                    className={`${
+                      step.isHighlight ? "card-gredient" : "card-gredient"
+                    } p-4  transition-all duration-400 hover:scale-105 hover:shadow-lg cursor-pointer group ${
+                      isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                    }`}
                     style={{ transitionDelay: `${0.6 + index * 0.1}s` }}
                   >
                     <div className="flex items-start gap-3 ">
                       <div
-                        className={`${step.isHighlight ? "text-[#000000]" : "text-[#000000]"
-                          } mt-1 transition-transform duration-300 text-xl group-hover:scale-110`}
+                        className={`${
+                          step.isHighlight ? "text-[#000000]" : "text-[#000000]"
+                        } mt-1 transition-transform duration-300 text-xl group-hover:scale-110`}
                       >
                         {step.icon}
                       </div>
                       <div>
                         <h3
-                          className={`${step.isHighlight ? "text-white" : "text-white"
-                            } text-lg font-bold mb-2 tracking-wide group-hover:text-white transition-colors duration-300`}
+                          className={`${
+                            step.isHighlight ? "text-white" : "text-white"
+                          } text-lg font-bold mb-2 tracking-wide group-hover:text-white transition-colors duration-300`}
                         >
                           {step.title}
                         </h3>
@@ -498,35 +511,35 @@ export default function AnimatedMarketingSection() {
             {/* Stats Card */}
             <div className=" flex  w-[100%] justify-between ">
               <div
-                className={`flex flex-col relative items-center gap-2 mt-16 mr-[100px] transition-all duration-1000 ${isVisible ? "rotate-0 scale-100 opacity-100" : "rotate-45 scale-0 opacity-0"
-                  }`}
+                className={`flex flex-col relative items-center gap-2 mt-16 mr-[100px] transition-all duration-1000 ${
+                  isVisible ? "rotate-0 scale-100 opacity-100" : "rotate-45 scale-0 opacity-0"
+                }`}
                 style={{ transitionDelay: "0.6s" }}
               >
-
-                <div className="w-42 h-42  animate-bounce flex items-center justify-start">
+                {/* <div className="w-42 h-42  animate-bounce flex items-center justify-start">
                   <img className="w-42 h-42 -rotate-30" src="/QanWLr.png" alt="" />
-
-                </div>
+                </div> */}
               </div>
               <div
-                className={`bg-black border w-[60%] border-[#44c5f8] rounded-lg p-6 flex justify-center transition-all duration-1000 hover:shadow-2xl hover:shadow-[#44c5f8]/20 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
-                  }`}
+                className={`bg-black border w-[60%] border-[#10d4c4] rounded-lg p-6 flex justify-center transition-all duration-1000 hover:shadow-2xl hover:shadow-[#00d4ff]/20 ${
+                  isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+                }`}
                 style={{ transitionDelay: "1s" }}
               >
                 <div className="space-y-8">
                   {stats.map((stat, index) => (
                     <div key={index}>
                       <div className="text-center group cursor-pointer">
-                        <h3 className="text-[#44c5f8] text-3xl font-bold mb-1 transition-all duration-300 group-hover:scale-110">
+                        <h3 className="text-[#10d4c4] text-3xl font-bold mb-1 transition-all duration-300 group-hover:scale-110">
                           {counters[stat.key]}
                           {stat.suffix}
                         </h3>
-                        <p className="text-white text-xs font-medium tracking-widest group-hover:text-[#44c5f8] transition-colors duration-300">
+                        <p className="text-white text-xs font-medium tracking-widest group-hover:text-[#10d4c4] transition-colors duration-300">
                           {stat.label}
                         </p>
                       </div>
                       {index < stats.length - 1 && (
-                        <div className="border-b border-gray-700 mt-6 transition-all duration-300 hover:border-[#44c5f8]"></div>
+                        <div className="border-b border-gray-700 mt-6 transition-all duration-300 hover:border-[#10d4c4]"></div>
                       )}
                     </div>
                   ))}
@@ -536,12 +549,11 @@ export default function AnimatedMarketingSection() {
 
             {/* Marketing Journey Image */}
             <div
-              className={`relative overflow-hidden rounded-lg transition-all duration-1000 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                }`}
+              className={`relative overflow-hidden rounded-lg transition-all duration-1000 hover:scale-105 ${
+                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              }`}
               style={{ transitionDelay: "1.2s" }}
-            >
-
-            </div>
+            ></div>
             {/* <div className={` overflow-hidden rounded-lg  relative mt-[100px] transition-all duration-1000 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
               }`}
               style={{ transitionDelay: "1.2s" }}>
@@ -551,7 +563,7 @@ export default function AnimatedMarketingSection() {
                 className="w-full max-h-screen rounded-lg"
               />
             </div> */}
-            <ModernTablet/>
+            <ModernTablet />
           </div>
         </div>
       </div>
@@ -604,3 +616,4 @@ export default function AnimatedMarketingSection() {
     </div>
   )
 }
+

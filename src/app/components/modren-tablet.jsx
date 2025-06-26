@@ -50,12 +50,12 @@ export default function ModernTablet() {
         style={{ transitionDelay: "1.2s" }}
       >
         {/* Modern Tablet Frame */}
-        <div className="relative  border  rounded-[3rem] h-[80vh] p-6 shadow-2xl max-w-7xl">
+        <div className="relative  border border-teal-500  rounded-[3rem] h-[80vh] p-6 shadow-2xl max-w-7xl">
           {/* Top Bezel with Camera and Sensors */}
           <div className="flex justify-center items-center mb-4 space-x-4">
-            <div className="w-1 h-1 bg-gray-700 rounded-full"></div>
-            <div className="w-16 h-3 bg-gray-700 rounded-full"></div>
-            <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+            <div className="w-1 h-1 bg-teal-500 rounded-full"></div>
+            <div className="w-16 h-3 bg-teal-500 rounded-full"></div>
+            <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
           </div>
 
          <video
@@ -84,20 +84,20 @@ export default function ModernTablet() {
 
           {/* Bottom Bezel */}
           <div className="flex justify-center mt-4">
-            <div className="w-16 h-1 bg-gray-700 rounded-full"></div>
+            <div className="w-16 h-1 bg-teal-500 rounded-full"></div>
           </div>
 
           {/* Side Elements */}
-          <div className="absolute left-0 top-24 w-1 h-16 bg-gray-700 rounded-r-full"></div>
-          <div className="absolute left-0 top-44 w-1 h-12 bg-gray-700 rounded-r-full"></div>
-          <div className="absolute right-0 top-32 w-1 h-20 bg-gray-700 rounded-l-full"></div>
+          <div className="absolute left-0 top-24 w-1 h-16 bg-teal-500 rounded-r-full"></div>
+          <div className="absolute left-0 top-44 w-1 h-12 bg-teal-5000 rounded-r-full"></div>
+          <div className="absolute right-0 top-32 w-1 h-20 bg-teal-500 rounded-l-full"></div>
         </div>
 
         {/* Realistic Shadow and Reflection */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black to-black rounded-[3rem] blur-2xl opacity-20 scale-95 translate-y-8 -z-10"></div>
 
         {/* Subtle Reflection */}
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-3/4 h-32 bg-gradient-to-b from-gray-400 to-transparent opacity-10 blur-xl rounded-[50%] mt-4"></div>
+        <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-3/4 h-32 bg-gradient-to-b from-cyan-400 to-transparent opacity-10 blur-xl rounded-[50%] mt-4"></div>
       </div>
     </div>
   )

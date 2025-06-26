@@ -70,9 +70,9 @@ export default function BlogSection() {
     <section className="min-h-screen bg-black text-white py-16 px-4 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-[#2188b1] rounded-full"></div>
-        <div className="absolute top-40 right-20 w-1 h-1 bg-[#2188b1] rounded-full"></div>
-        <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-[#2188b1] rounded-full"></div>
+        <div className="absolute top-20 left-10 w-2 h-2 bg-[#10d4c4] rounded-full"></div>
+        <div className="absolute top-40 right-20 w-1 h-1 bg-[#10d4c4] rounded-full"></div>
+        <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-[#10d4c4] rounded-full"></div>
       </div>
 
       <div className="max-w-[80%] mx-auto">
@@ -86,7 +86,7 @@ export default function BlogSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <motion.div
-              className="w-2 h-2 bg-[#2188b1] rounded-full"
+              className="w-2 h-2 bg-[#10d4c4] rounded-full"
               animate={{
                 scale: [1, 1.2, 1],
                 opacity: [1, 0.7, 1],
@@ -97,7 +97,7 @@ export default function BlogSection() {
                 ease: "easeInOut",
               }}
             ></motion.div>
-            <span className="text-[#2188b1] text-sm font-medium tracking-wider">BLOG & ARTICLE</span>
+            <span className="text-[#10d4c4] text-sm font-medium tracking-wider">BLOG & ARTICLE</span>
           </div>
           <motion.h2
             className="text-4xl md:text-5xl lg:text-6xl font-bold"
@@ -149,7 +149,7 @@ export default function BlogSection() {
                   {/* Content */}
                   <div className="flex-1 space-y-4">
                     <motion.h3
-                      className="text-xl md:text-2xl font-bold text-white group-hover:text-[#2188b1] transition-colors duration-300"
+                      className="text-xl md:text-2xl font-bold text-white group-hover:text-[#10d4c4] transition-colors duration-300"
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
@@ -169,7 +169,7 @@ export default function BlogSection() {
 
                     {/* Read more indicator */}
                     <motion.div
-                      className="flex items-center gap-2 text-[#2188b1] opacity-0 group-hover:opacity-100 transition-all duration-300"
+                      className="flex items-center gap-2 text-[#10d4c4] opacity-0 group-hover:opacity-100 transition-all duration-300"
                       initial={{ x: -10 }}
                       whileHover={{ x: 0 }}
                     >
@@ -200,7 +200,7 @@ export default function BlogSection() {
             {[0, 1, 2].map((i) => (
               <motion.div
                 key={i}
-                className="w-2 h-2 bg-[#2188b1] rounded-full"
+                className="w-2 h-2 bg-[#10d4c4] rounded-full"
                 animate={{
                   scale: [1, 1.5, 1],
                   opacity: [0.5, 1, 0.5],

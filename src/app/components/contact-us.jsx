@@ -84,9 +84,9 @@ export default function ContactUs() {
                 <motion.div
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-                  className="w-3 h-3 bg-[#2188b1] rounded-full"
+                  className="w-3 h-3 bg-[#10d4c4] rounded-full"
                 ></motion.div>
-                <span className="text-[#2188b1] font-medium tracking-wider">GET IN TOUCH</span>
+                <span className="text-[#10d4c4] font-medium tracking-wider">GET IN TOUCH</span>
               </div>
 
               <motion.h1 variants={itemVariants} className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
@@ -110,7 +110,7 @@ export default function ContactUs() {
                 className="flex items-start gap-4"
               >
              <div className="flex items-start space-x-3">
-                <MapPin className="w-6 h-6 text-[#2188b1] mt-1 flex-shrink-0" />
+                <MapPin className="w-6 h-6 text-[#10d4c4] mt-1 flex-shrink-0" />
                 <p className="text-gray-300 text-lg">
                   Plot no C-18-F, burj-ul-minal Floor 304
                   <br />
@@ -127,11 +127,11 @@ export default function ContactUs() {
                 className="flex items-start gap-4"
               >
                 <div className="mt-1">
-                  <Mail className="w-5 h-5 text-[#2188b1]" />
+                  <Mail className="w-5 h-5 text-[#10d4c4]" />
                 </div>
                 <div className="text-gray-300 space-y-1">
    
-                  <div>Creative-sol-tech@gmail.com</div>
+                  <div>360 Austrailia@gmail.com</div>
                 </div>
               </motion.div>
 
@@ -141,7 +141,7 @@ export default function ContactUs() {
                 className="flex items-start gap-4"
               >
                 <div className="mt-1">
-                  <Phone className="w-5 h-5 text-[#2188b1]" />
+                  <Phone className="w-5 h-5 text-[#10d4c4]" />
                 </div>
                 <div className="text-gray-300">+92 323 3372009</div>
               </motion.div>
@@ -155,7 +155,7 @@ export default function ContactUs() {
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#2188b1] transition-colors duration-300"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#10d4c4] transition-colors duration-300"
                 >
                   <Facebook className="w-5 h-5" />
                 </motion.a>
@@ -163,7 +163,7 @@ export default function ContactUs() {
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#2188b1] transition-colors duration-300"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#10d4c4] transition-colors duration-300"
                 >
                   <Linkedin className="w-5 h-5" />
                 </motion.a>
@@ -183,7 +183,7 @@ export default function ContactUs() {
               <div className="grid md:grid-cols-2 gap-6">
                 <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                   <label className="block text-sm font-medium mb-2">
-                    Full Name <span className="text-[#2188b1]">*</span>
+                    Full Name <span className="text-[#10d4c4]">*</span>
                   </label>
                   <input
                     type="text"
@@ -191,14 +191,14 @@ export default function ContactUs() {
                     value={formData.fullName}
                     onChange={handleInputChange}
                     placeholder="John Smith"
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-[#2188b1] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500"
+                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-[#10d4c4] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500"
                     required
                   />
                 </motion.div>
 
                 <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                   <label className="block text-sm font-medium mb-2">
-                    Email Address <span className="text-[#2188b1]">*</span>
+                    Email Address <span className="text-[#10d4c4]">*</span>
                   </label>
                   <input
                     type="email"
@@ -206,7 +206,7 @@ export default function ContactUs() {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="youremail@domain.com"
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-[#2188b1] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500"
+                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-[#10d4c4] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500"
                     required
                   />
                 </motion.div>
@@ -215,10 +215,10 @@ export default function ContactUs() {
               <div className="grid md:grid-cols-2 gap-6">
                 <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                   <label className="block text-sm font-medium mb-2">
-                    Phone Number <span className="text-[#2188b1]">*</span>
+                    Phone Number <span className="text-[#10d4c4]">*</span>
                   </label>
                   <div className="flex">
-                    <select className="px-3 py-3 bg-gray-800 border border-gray-700 rounded-l-lg text-white border-r-0 focus:ring-2 focus:ring-[#2188b1] focus:border-transparent">
+                    <select className="px-3 py-3 bg-gray-800 border border-gray-700 rounded-l-lg text-white border-r-0 focus:ring-2 focus:ring-[#10d4c4] focus:border-transparent">
                       <option>🇵🇰 +92</option>
                       <option>🇺🇸 +1</option>
                       <option>🇬🇧 +44</option>
@@ -229,7 +229,7 @@ export default function ContactUs() {
                       value={formData.phoneNumber}
                       onChange={handleInputChange}
                       placeholder="204-123-4567"
-                      className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-r-lg focus:ring-2 focus:ring-[#2188b1] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500"
+                      className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-r-lg focus:ring-2 focus:ring-[#10d4c4] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500"
                       required
                     />
                   </div>
@@ -237,7 +237,7 @@ export default function ContactUs() {
 
                 <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                   <label className="block text-sm font-medium mb-2">
-                    Subject <span className="text-[#2188b1]">*</span>
+                    Subject <span className="text-[#10d4c4]">*</span>
                   </label>
                   <input
                     type="text"
@@ -245,7 +245,7 @@ export default function ContactUs() {
                     value={formData.subject}
                     onChange={handleInputChange}
                     placeholder="What services are you looking for?"
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-[#2188b1] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500"
+                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-[#10d4c4] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500"
                     required
                   />
                 </motion.div>
@@ -253,7 +253,7 @@ export default function ContactUs() {
 
               <motion.div whileHover={{ scale: 1.01 }} transition={{ type: "spring", stiffness: 300 }}>
                 <label className="block text-sm font-medium mb-2">
-                  Message <span className="text-[#2188b1]">*</span>
+                  Message <span className="text-[#10d4c4]">*</span>
                 </label>
                 <textarea
                   name="message"
@@ -261,7 +261,7 @@ export default function ContactUs() {
                   onChange={handleInputChange}
                   placeholder="Write message"
                   rows={5}
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-[#2188b1] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500 resize-none"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-[#10d4c4] focus:border-transparent transition-all duration-300 text-white placeholder-gray-500 resize-none"
                   required
                 ></textarea>
               </motion.div>
@@ -285,10 +285,10 @@ export default function ContactUs() {
               </div>
 
               <motion.button
-                whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(234, 179, 8, 0.3)" }}
+                whileHover={{ scale: 1.05, boxShadow: "0 5px 10px #939494" }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="w-full bg-[#2188b1] hover:bg-[#2188b1] text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full bg-[#0fa397] hover:bg-[#0fa397] text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
               >
                 Send Message
                 <motion.span

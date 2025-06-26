@@ -12,7 +12,7 @@ const testimonials = [
         company: "Attock Cement",
         image: "/360_F_431647519_usrbQ8Z983hTYe8zgA7t1XVc5fEtqcpa.jpg",
         rating: 5,
-        text: "Creative-sol-tech is different from the rest of contenders in the market. Why different? The guy who leads is not only educated but sensible also to cater the needs of customer.",
+        text: "360 Austrailia is different from the rest of contenders in the market. Why different? The guy who leads is not only educated but sensible also to cater the needs of customer.",
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
         company: "Reliance Insurance",
         image: "/photo-1535713875002-d1d0cf377fde.jfif",
         rating: 5,
-        text: "The team at Creative-sol-tech has been exceptional throughout our collaboration, delivering reliability and expertise. They truly understand our vision and execute it with professionalism. Their commitment to excellence consistently exceeds our expectations.",
+        text: "The team at 360 Austrailia has been exceptional throughout our collaboration, delivering reliability and expertise. They truly understand our vision and execute it with professionalism. Their commitment to excellence consistently exceeds our expectations.",
     },
     {
         id: 3,
@@ -106,8 +106,8 @@ export default function TestimonialSection() {
                     className="text-center mb-16"
                 >
                     <div className="flex relative items-center justify-center gap-2 mb-4 ">
-                        <div className="w-2 h-2 bg-[#2188b1] rounded-full"></div>
-                        <span className="text-[#2188b1]  text-sm font-medium tracking-wider uppercase">Testimonial</span>
+                        <div className="w-2 h-2 bg-[#10d4c4] rounded-full"></div>
+                        <span className="text-[#10d4c4]  text-sm font-medium tracking-wider uppercase">Testimonial</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">HAPPY CLIENT</h2>
                     <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-400">FEEDBACK</h3>
@@ -151,14 +151,14 @@ export default function TestimonialSection() {
                                         {/* Profile Section */}
                                         <div className="flex flex-col items-center mb-6">
                                             <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }} className="relative mb-4">
-                                                <div className="w-24 h-24 rounded-full border-4 border-[#2188b1] p-1">
+                                                <div className="w-24 h-24 rounded-full border-4 border-[#10d4c4] p-1">
                                                     <img
                                                         src={testimonial.image || "/placeholder.svg"}
                                                         alt={testimonial.name}
                                                         className="w-full h-full rounded-full object-cover grayscale"
                                                     />
                                                 </div>
-                                                <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#2188b1] rounded-full flex items-center justify-center">
+                                                <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#10d4c4] rounded-full flex items-center justify-center">
                                                     <span className="text-white text-xs font-bold">✓</span>
                                                 </div>
                                             </motion.div>
@@ -169,7 +169,7 @@ export default function TestimonialSection() {
 
                                         {/* Company */}
                                         <div className="text-center mb-6">
-                                            <h5 className="text-[#2188b1] font-semibold text-lg">{testimonial.company}</h5>
+                                            <h5 className="text-[#10d4c4] font-semibold text-lg">{testimonial.company}</h5>
                                         </div>
 
                                         {/* Testimonial Text */}
@@ -186,7 +186,7 @@ export default function TestimonialSection() {
                                                     animate={{ opacity: 1, scale: 1 }}
                                                     transition={{ duration: 0.3, delay: i * 0.1 }}
                                                 >
-                                                    <Star className="w-5 h-5 text-[#2188b1] fill-current" />
+                                                    <Star className="w-5 h-5 text-[#10d4c4] fill-current" />
                                                 </motion.div>
                                             ))}
                                         </div>
@@ -212,7 +212,7 @@ export default function TestimonialSection() {
                                     setCurrentIndex(index)
                                     setIsAutoPlaying(false)
                                 }}
-                                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? "bg-[#2188b1]" : "bg-gray-600 hover:bg-gray-500"
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? "bg-[#10d4c4]" : "bg-gray-600 hover:bg-gray-500"
                                     }`}
                             />
                         ))}
