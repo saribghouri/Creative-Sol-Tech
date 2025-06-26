@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useRef } from "react"
-import Image from "next/image"
 
 export default function ClientLogosSection() {
   const [isPaused, setIsPaused] = useState(false)
@@ -38,7 +37,7 @@ export default function ClientLogosSection() {
         return (
           <div key={index} className={baseClasses}>
             <div className="flex items-center justify-center  rounded-lg p-4 ">
-              <Image
+              <img
                 src="/MLEntp.png"
                 alt="360 Australia Ventures Logo"
                 width={120}
