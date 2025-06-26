@@ -53,7 +53,7 @@ export default function HomePage() {
       title: "UI/UX Design",
       description: "Beautiful, intuitive designs that provide exceptional user experiences",
       tags: ["Figma", "Adobe XD", "Prototyping"],
-      gradient: "from-purple-500 to-pink-500",
+      gradient: "from-purple-5000 to-pink-500",
     },
     {
       icon: <MobileOutlined className="text-2xl text-green-400" />,
