@@ -147,7 +147,7 @@ export default function ContactUs() {
               </motion.div>
             </motion.div>
 
-            {/* Social Media */}
+         
             <motion.div variants={itemVariants} className="space-y-4">
               <h3 className="text-xl font-semibold">FOLLOW ME</h3>
               <div className="flex gap-4">
@@ -171,7 +171,7 @@ export default function ContactUs() {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Contact Form */}
+          
           <motion.div
             variants={formVariants}
             initial="hidden"
