@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="bg-[#10d4c4] h-[2px] mb-[20px]"></div>
       <div className="max-w-8xl mx-auto flex flex-col justify-center bg-black ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-32 mb-8 ml-[80px]">
-          {/* Company Info */}
+       
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-[#10d4c4] rounded flex items-center justify-center">
@@ -23,7 +23,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="text-xl font-semibold">Quick Links</h4>
             <nav className="flex flex-row gap-12 space-y-8">
@@ -41,7 +40,7 @@ export default function Footer() {
               </a>
             </nav>
 
-            {/* Newsletter Subscription */}
+          
             <div className="mt-6 space-y-3">
               <div className="flex">
                 <input
@@ -56,7 +55,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Contact Info */}
+       
           <div className="space-y-4">
             <h4 className="text-[24px] font-semibold">Contact Info</h4>
             <div className="space-y-3">
@@ -85,7 +84,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section */}
+       
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between text-center items-center">
           <p className="text-gray-400 text-lg mb-4 md:mb-0">© 2025 Creative sol tech. All Rights Reserved.</p>
           <div className="flex space-x-4">
@@ -99,7 +98,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* WhatsApp Floating Button */}
+     
   
     </footer>
   )
